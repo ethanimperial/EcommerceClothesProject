@@ -3,13 +3,14 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+	<body><%@include file="/include/navbar.jsp"%>
 <div class="row">
 	<div class="container">
 		<h3 class="text-center">List of Users</h3>
 		<hr>
 		<div class="container text-left">
 			<!-- Add new user button redirects to the register.jsp page -->
-			<a href="<%=request.getContextPath()%>/register.jsp"
+			<a href="<%=request.getContextPath()%>/AddProduct.jsp"
 				class="btn btnsuccess">Add New User</a>
 		</div>
 		<br>
@@ -49,3 +50,4 @@ value='${product.name}' />">Delete</a>
 		</table>
 	</div>
 </div>
+</body>
