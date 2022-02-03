@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<form action="RegisterServlet" method="post">
+ 	Name: <input type="text" name="userName">
+ 	Password: <input type="password" name="password">
+ 	Email: <input type="text" name="email">
+ 	Address: <input type="text" name="address">
+ 	
+ 	<input type="submit" value="Call Servlet"/>
+</form>
 
 </body>
 </html>
