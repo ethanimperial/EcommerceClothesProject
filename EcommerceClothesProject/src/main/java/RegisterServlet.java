@@ -48,16 +48,16 @@ public class RegisterServlet extends HttpServlet {
 		String n = request.getParameter("userName");
 		String p = request.getParameter("password");
 		String e = request.getParameter("email");
-		String c = request.getParameter("language");
+		String c = request.getParameter("address");
 		
 		//Step 3: attempt connection to database using JDBC, you can change the username and password accordingly using the phpMyAdmin > User Account dashboard
 		try {
 		 Class.forName("com.mysql.jdbc.Driver");
 		 Connection con = DriverManager.getConnection(
-		 "jdbc:mysql://localhost:3306/userdetails", "root", "password");
+		 "jdbc:mysql://localhost:3306/usersstuff", "root", "password");
 		 
 		//Step 4: implement the sql query using prepared statement (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
-		 PreparedStatement ps = con.prepareStatement("insert into USERDETAILS values(?,?,?,?)");
+		 PreparedStatement ps = con.prepareStatement("insert into USERSSTUFF values(?,?,?,?)");
 		 
 		//Step 5: parse in the data retrieved from the web form request into the prepared statement accordingly
 		 ps.setString(1, n);
