@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
-	
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,11 +83,11 @@ h2 {
 
 <meta charset="ISO-8859-1">
 <title>ECommerce Application</title>
-<%@include file="/include/head.jsp"%>
+
 </head>
 <body>
 <%@include file="/include/navbar.jsp"%>
-<%@include file="/include/footer.jsp"%>
+
 	<hr>
 	<h3 class="text-center">Edit Products</h3>
 	<div class="container text-left">
