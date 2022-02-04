@@ -15,6 +15,7 @@
 			
 			<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/cart.jsp">Cart</a></li>
 			
+			
 			</ul>
 		</div>
 	</div>
