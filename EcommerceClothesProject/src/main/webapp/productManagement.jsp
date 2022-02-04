@@ -50,4 +50,5 @@ value='${product.name}' />">Delete</a>
 		</table>
 	</div>
 </div>
+
 </body>
