@@ -57,7 +57,7 @@ public class RegisterServlet extends HttpServlet {
 		 "jdbc:mysql://localhost:3306/usersstuff", "root", "password");
 		 
 		//Step 4: implement the sql query using prepared statement (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
-		 PreparedStatement ps = con.prepareStatement("insert into USERSSTUFF values(?,?,?,?)");
+		 PreparedStatement ps = con.prepareStatement("insert into USERSSTUFF (name, password, email, address) values(?,?,?,?)");
 		 
 		//Step 5: parse in the data retrieved from the web form request into the prepared statement accordingly
 		 ps.setString(1, n);
