@@ -8,12 +8,12 @@
 </head>
 <body>
 <form action="RegisterServlet" method="post">
- 	Name: <input type="text" name="userName">
- 	Password: <input type="password" name="password">
- 	Email: <input type="text" name="email">
- 	Address: <input type="text" name="address">
+ 	Name: <input type="text" name="userName"><br>
+ 	Password: <input type="password" name="password"><br>
+ 	Email: <input type="text" name="email"><br>
+ 	Address: <input type="text" name="address"><br>
  	
- 	<input type="submit" value="Call Servlet"/>
+ 	<input type="submit" value="Register"/>
 </form>
 
 </body>
