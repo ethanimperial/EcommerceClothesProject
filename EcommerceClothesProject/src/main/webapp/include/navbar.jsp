@@ -10,7 +10,11 @@
 	
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/Home.jsp">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Admin</a></li>
+			
+			<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/cart.jsp">Cart</a></li>
+			
 			
 			</ul>
 		</div>
