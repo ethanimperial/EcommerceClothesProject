@@ -8,8 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<%@include file="include/navbar.jsp"%>
 	
-	<% out.print(DBCon.getConnection()); %>
+	<h1>Welcome to E-commerce Clothes!</h1>
 
 </body>
 </html>
