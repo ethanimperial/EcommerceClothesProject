@@ -11,7 +11,7 @@
   </welcome-file-list>
   
   
-  <servlet>
+  <!-- <servlet>
  	<servlet-name>RFeedbackServlet</servlet-name>
  	<servlet-class>RFeedbackServlet</servlet-class>
  </servlet>
@@ -21,6 +21,19 @@
 	<url-pattern>/RFeedbackServlet/dashboard</url-pattern>
 	<url-pattern>/RFeedbackServlet/edit</url-pattern>
 	<url-pattern>/RFeedbackServlet/update</url-pattern>
+ </servlet-mapping> -->
+ 
+ 	<servlet>
+ <servlet-name>ProductDetailsServlet</servlet-name>
+ <servlet-class>ProductDetailsServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+ <servlet-name>ProductDetailsServlet</servlet-name>
+<url-pattern>/ProductDetailsServlet/dashboard</url-pattern>
+ <url-pattern>/ProductDetailsServlet/edit</url-pattern>
+ <url-pattern>/ProductDetailsServlet/update</url-pattern>
+ <url-pattern>/ProductDetailsServlet/delete</url-pattern>
  </servlet-mapping>
  
 </web-app>
