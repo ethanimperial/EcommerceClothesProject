@@ -50,8 +50,7 @@ List<Product> products = pd.getAllProducts();
 				<h6 class="price"><%= p.getPrice() %></h6>
 				<h6 class="category"><%= p.getCategory() %></h6>
 				<div class="mt-3 d-flex justify-content-between">
-					<a class="btn btn-dark" href="AddToCartServlet?id=<%= p.getId() %>">Add to Cart</a> <a
-						class="btn btn-primary" href=>Buy Now</a>
+					<a class="btn btn-primary" href="AddToCartServlet?id=<%= p.getId() %>">Add to Cart</a> 
 				</div>
 			</div>
 		</div>
