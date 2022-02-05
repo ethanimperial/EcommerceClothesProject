@@ -41,7 +41,10 @@ public class LoginServlet extends HttpServlet {
 //				System.out.print("user logged in");
 				response.sendRedirect("index.jsp");
 			} else {
-				out.println("Your username or password is incorrect, please try again.");
+				out.println("Your username or password is incorrect, please try again." + "<br>" +
+							"<a href='login.jsp'>" + "Try again." + "</a>"
+				);
+				
 			}
 		} catch (ClassNotFoundException|SQLException e) {
 			e.printStackTrace();
