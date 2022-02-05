@@ -6,7 +6,7 @@ public class RFeedback {
 
 	public RFeedback(int id, String feedback) {
 		super();
-		this.id = id;
+		this.id = id; 
 		this.Feedback = feedback;
 	}
  

@@ -41,7 +41,7 @@
 	</c:if>
 						<c:if test="${feedback == null}">
 	Add New Feedback
-	</c:if> 
+	</c:if>  
 					</h2>
 				</caption>
 				<c:if test="${feedback != null}">

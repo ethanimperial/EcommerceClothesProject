@@ -24,7 +24,7 @@
 			<br>
 			<!-- Create a table to list out all feedbacks information -->
 			<table class="table">
-				<thead> 
+				<thead>  
 					<tr>
 						<th>Feedback</th>
 
