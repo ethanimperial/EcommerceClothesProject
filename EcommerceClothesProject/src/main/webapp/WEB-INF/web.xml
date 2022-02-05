@@ -27,4 +27,19 @@
 		<url-pattern>/ProductDetailsServlet/delete</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>RFeedbackServlet</servlet-name>
+		<servlet-class>RFeedbackServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RFeedbackServlet</servlet-name>
+		<url-pattern>/RFeedbackServlet/dashboard</url-pattern>
+		<url-pattern>/RFeedbackServlet/edit</url-pattern>
+		<url-pattern>/RFeedbackServlet/update</url-pattern>
+	</servlet-mapping>
+
+
+
+
 </web-app>
