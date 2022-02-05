@@ -10,7 +10,7 @@
 	
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-        <%if(auth != null){%>
+        			<%if(auth != null){%>
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Admin</a></li>
 					<li class="nav-item"><a class="nav-link" href="log-out">Log out</a></li>
