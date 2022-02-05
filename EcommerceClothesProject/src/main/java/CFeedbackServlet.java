@@ -14,13 +14,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class FeedbackServlet
  */
 @WebServlet("/FeedbackServlet")
-public class FeedbackServlet extends HttpServlet {
+public class CFeedbackServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public FeedbackServlet() {
+    public CFeedbackServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
