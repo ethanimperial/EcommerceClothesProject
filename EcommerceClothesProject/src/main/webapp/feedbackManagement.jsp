@@ -48,8 +48,8 @@
 								href="edit?name=<c:out value='${feedback.id}'
 	/>">Edit</a>
 								&nbsp;&nbsp;&nbsp;&nbsp; <a
-								href="delete?feedback=<c:out
-	value='${feedback.feedback}' />">Delete</a>
+								href="delete?id=<c:out
+	value='${feedback.id}' />">Delete</a>
 							</td>
 
 						</tr>
