@@ -20,7 +20,7 @@
 		</div>
 		<ul class="navbar-nav">
 			<li><a
-				href="<%=request.getContextPath()%>/RFeedbackServlet/dashboard"
+				href="<%=request.getContextPath()%>/R2FeedbackServlet/dashboard"
 				class="nav-link">Back to Dashboard</a></li>
 		</ul>
 	</nav>
@@ -33,6 +33,7 @@
 				<c:if test="${feedback == null}">
 					<form action="insert" method="post">
 				</c:if>
+				
 				<caption>
 				
 					<h2>
