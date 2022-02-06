@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 	
-
+<!DOCTYPE html> 
 <html>
 <head>
 
@@ -20,9 +20,25 @@
 	border-radius: .25rem;
 }
 
+h1 {
+	text-align-last: center;
+}
+
+h2 {
+	text-align-last: center;
+}
+
+.item img {
+	width: 64px;
+}
+
 .item {
 	margin: 0px 15px;
 	text-align: center;
+}
+
+.item a:hover {
+	color: blue;
 }
 
 .card {
