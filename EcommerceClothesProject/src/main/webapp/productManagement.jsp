@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 	
-<!DOCTYPE html>
+
 <html>
 <head>
 
@@ -19,32 +19,24 @@
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: .25rem;
 }
-h1 {
-	text-align-last: center;
-}
-h2 {
-	text-align-last: center;
-}
-.item img {
-	width: 64px;
-}
+
 .item {
 	margin: 0px 15px;
 	text-align: center;
 }
-.item a:hover {
-	color: blue;
-}
+
 .card {
 	padding: 10px;
 	margin: 30px;
 	transition: 0.6s;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
 }
+
 .card:hover {
 	transition: 1.0s;
 	transform: scale(1.1);
 }
+
 .card img {
 	margin-bottom: 15px;
 	transition: 0.3s ease-in-out;
@@ -53,10 +45,12 @@ h2 {
 	margin-right: auto;
 	width: 80%;
 }
+
 .card img:hover {
 	transition: 0.3s ease-in-out;
 	transform: scale(1.1);
 }
+
 .center {
 	display: flex;
 	justify-content: center;
