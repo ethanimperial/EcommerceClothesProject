@@ -1,7 +1,3 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-
 
 <!DOCTYPE html>
 <html>
@@ -84,10 +80,6 @@ h2 {
 
 <meta charset="ISO-8859-1">
 <title>ECommerce Application</title>
-
-</head>
-<body>
-<%@include file="/include/navbar.jsp"%>
 
 	<hr>
 	<h3 class="text-center">Edit Products</h3>
