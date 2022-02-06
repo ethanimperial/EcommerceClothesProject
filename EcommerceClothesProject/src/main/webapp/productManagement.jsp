@@ -87,7 +87,7 @@ h2 {
 </head>
 <body>
 <%@include file="/include/navbar.jsp"%>
-<%@include file="/include/footer.jsp"%>
+<%@include file="/include/footer.jsp"%> 
 	<hr>
 	<h3 class="text-center">Edit Products</h3>
 	<div class="container text-left">
