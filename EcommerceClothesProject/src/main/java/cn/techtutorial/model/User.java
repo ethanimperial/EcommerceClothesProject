@@ -2,17 +2,17 @@ package cn.techtutorial.model;
 
 public class User {
 	
-	private int id;
-	private String name;
-	private String password;
-	private String email;
-	private String address;
+	protected String id;
+	protected String name;
+	protected String password;
+	protected String email;
+	protected String address;
 	
 	public User() {
 		
 	}
 	
-	public User(int id, String name, String password, String email, String address) {
+	public User(String id, String name, String password, String email, String address) {
 		this.id = id;
 		this.name = name;
 		this.password = password;
@@ -20,11 +20,11 @@ public class User {
 		this.address = address;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
