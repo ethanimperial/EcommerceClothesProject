@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.servlet.http.HttpSession;
+
 import cn.techtutorial.model.User;
 
 public class UserDao {
@@ -18,6 +20,8 @@ public class UserDao {
 	
 	public User userLogin(String email, String password) {
 		User user = null;
+		
+		
 		try {
 			query = "select * from usersstuff where email = ? and password = ?";
 			
@@ -28,10 +32,12 @@ public class UserDao {
 			
 			if(rs.next()) {
 				user = new User();
-				user.setId(rs.getInt("id"));
+				user.setId(rs.getString("id"));
 				user.setName(rs.getString("name"));
 				user.setEmail(rs.getString("email"));
 				user.setAddress(rs.getString("address"));
+				
+				String id = rs.getString("id");
 			}
 		}catch (Exception e) {
 			// TODO: handle exception
