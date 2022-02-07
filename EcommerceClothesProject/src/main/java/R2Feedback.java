@@ -1,10 +1,10 @@
 
-public class RFeedback {
+public class R2Feedback {
 
 	protected int id;
 	protected String Feedback;
 
-	public RFeedback(int id, String feedback) {
+	public R2Feedback(int id, String feedback) {
 		super();
 		this.id = id; 
 		this.Feedback = feedback;
@@ -22,7 +22,7 @@ public class RFeedback {
 
 
 	
-	public RFeedback(String Feedback) {
+	public R2Feedback(String Feedback) {
 		super();
 		this.Feedback = Feedback;
 	}

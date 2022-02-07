@@ -15,15 +15,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class RFeedbackServlet
+ * Servlet implementation class R2FeedbackServlet
  */
-@WebServlet("/RFeedbackServlet")
-public class RFeedbackServlet extends HttpServlet {
+@WebServlet("/R2FeedbackServlet")
+public class R2FeedbackServlet extends HttpServlet {
 
 	// Step 1: Prepare list of variables used for database connections
 	private String jdbcURL = "jdbc:mysql://localhost:3306/user_feedback";
 	private String jdbcUsername = "root";
-	private String jdbcPassword = "password"; 
+	private String jdbcPassword = "password";
 
 	// Step 2: Prepare list of SQL prepared statements to perform CRUD to our
 	// database
@@ -53,7 +53,7 @@ public class RFeedbackServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public RFeedbackServlet() {
+	public R2FeedbackServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -71,15 +71,19 @@ public class RFeedbackServlet extends HttpServlet {
 			case "/insert":
 				break;
 
-			case "/RFeedbackServlet/edit":
+			case "/R2FeedbackServlet/delete":
+				deleteFeedback(request, response);
+				break;
+
+			case "/R2FeedbackServlet/edit":
 				showEditForm(request, response);
 				break;
 
-			case "/RFeedbackServlet/update":
+			case "/R2FeedbackServlet/update":
 				updateFeedback(request, response);
 				break;
 
-			case "/RFeedbackServlet/dashboard":
+			case "/R2FeedbackServlet/dashboard":
 				listFeedbacks(request, response);
 				break;
 
@@ -108,7 +112,7 @@ public class RFeedbackServlet extends HttpServlet {
 	// records
 	private void listFeedbacks(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException {
-		List<RFeedback> feedbacks = new ArrayList<>();
+		List<R2Feedback> feedbacks = new ArrayList<>();
 		try (Connection connection = getConnection();
 				// Step 5.1: Create a statement using connection object
 				PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_Feedbacks);) {
@@ -116,9 +120,9 @@ public class RFeedbackServlet extends HttpServlet {
 			ResultSet rs = preparedStatement.executeQuery();
 			// Step 5.3: Process the ResultSet object.
 			while (rs.next()) {
-				int id =  rs.getInt("id");
+				int id = rs.getInt("id");
 				String Feedback = rs.getString("Feedback");
-				feedbacks.add(new RFeedback(id, Feedback));
+				feedbacks.add(new R2Feedback(id, Feedback));
 			}
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
@@ -136,7 +140,7 @@ public class RFeedbackServlet extends HttpServlet {
 			throws SQLException, ServletException, IOException {
 		// get parameter passed in the URL
 		String name = request.getParameter("name");
-		RFeedback existingFeedback = new RFeedback(0, "");
+		R2Feedback existingFeedback = new R2Feedback(0, "");
 
 		// Step 1: Establishing a Connection
 		try (Connection connection = getConnection();
@@ -150,10 +154,10 @@ public class RFeedbackServlet extends HttpServlet {
 
 			// Step 4: Process the ResultSet object
 			while (rs.next()) {
-				int id =  rs.getInt("id");
+				int id = rs.getInt("id");
 				String feedback = rs.getString("feedback");
-				existingFeedback = new RFeedback(id, feedback);
-				
+				existingFeedback = new R2Feedback(id, feedback);
+
 			}
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
@@ -163,7 +167,6 @@ public class RFeedbackServlet extends HttpServlet {
 		request.setAttribute("feedback", existingFeedback);
 		request.getRequestDispatcher("/userEdit.jsp").forward(request, response);
 	}
-	
 
 	// method to update the feedback table base on the form data
 	private void updateFeedback(HttpServletRequest request, HttpServletResponse response)
@@ -171,7 +174,7 @@ public class RFeedbackServlet extends HttpServlet {
 		// Step 1: Retrieve value from the request
 		String feedback = request.getParameter("feedback");
 		String id = request.getParameter("id");
-
+		
 		// Step 2: Attempt connection with database and execute update feedback SQL
 		// query
 		try (Connection connection = getConnection();
@@ -182,7 +185,25 @@ public class RFeedbackServlet extends HttpServlet {
 		}
 		// Step 3: redirect back to RFeedbackServlet (note: remember to change the url
 		// to your project name)
-		response.sendRedirect("http://localhost:8080/EcommerceClothesProject/RFeedbackServlet/dashboard"); 
+		response.sendRedirect("http://localhost:8080/EcommerceClothesProject/R2FeedbackServlet/dashboard");
+	}
+
+	// method to delete feedback
+	private void deleteFeedback(HttpServletRequest request, HttpServletResponse response)
+	throws SQLException, IOException {
+		
+	//Step 1: Retrieve value from the request
+		String id = request.getParameter("id");
+		
+	 //Step 2: Attempt connection with database and execute delete feedback SQL query
+	 try (Connection connection = getConnection(); 
+			 PreparedStatement statement = connection.prepareStatement(DELETE_Feedbacks_SQL);) {
+		 statement.setString(1, id);
+		
+		 int i = statement.executeUpdate();
+	 }
+	 //Step 3: redirect back to UserServlet dashboard (note: remember to change the url to your project name)
+	 response.sendRedirect("http://localhost:8080/EcommerceClothesProject/R2FeedbackServlet/dashboard");
 	}
 
 }
