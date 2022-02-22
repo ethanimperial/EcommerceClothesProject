@@ -11,6 +11,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  * Servlet implementation class RegisterServlet
@@ -49,6 +50,7 @@ public class RegisterServlet extends HttpServlet {
 		String p = request.getParameter("password");
 		String e = request.getParameter("email");
 		String c = request.getParameter("address");
+		String sql = request.getParameter("email");
 		
 		//Step 3: attempt connection to database using JDBC, you can change the username and password accordingly using the phpMyAdmin > User Account dashboard
 		try {
@@ -58,22 +60,39 @@ public class RegisterServlet extends HttpServlet {
 		 
 		//Step 4: implement the sql query using prepared statement (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
 		 PreparedStatement ps = con.prepareStatement("insert into USERSSTUFF (name, password, email, address) values(?,?,?,?)");
+		 PreparedStatement sqlStuff = con.prepareStatement("select email from usersstuff where email = ?");
 		 
 		//Step 5: parse in the data retrieved from the web form request into the prepared statement accordingly
 		 ps.setString(1, n);
 		 ps.setString(2, p);
 		 ps.setString(3, e);
 		 ps.setString(4, c);
+		 sqlStuff.setString(1, e);
 		 
 		//Step 6: perform the query on the database using the prepared statement
-		 int i = ps.executeUpdate();
+		 ResultSet i = sqlStuff.executeQuery();
+		 
+		 boolean hasResult = i.next();
 		 
 		//Step 7: check if the query had been successfully execute, return “You are successfully registered” via the response,
-		 if (i > 0){
-			 	PrintWriter writer = response.getWriter();
+		 if (!hasResult){
+			 int abc = ps.executeUpdate();/////
+			 
+			//Step 7: check if the query had been successfully execute, return “You are successfully registered” via the response,
+			 if (abc > 0){
+				 	PrintWriter writer = response.getWriter();
+				 	writer.println(
+				 			"<h1>" + "You have successfully registered an account!" + "</h1>" + 
+				 			"<a href='login.jsp'>" + "Login now!" + "</a>"
+				 			);
+				 	writer.close();
+			 }
+			 
+		 } else {
+			 PrintWriter writer = response.getWriter();
 			 	writer.println(
-			 			"<h1>" + "You have successfully registered an account!" + "</h1>" + 
-			 			"<a href='login.jsp'>" + "Login now!" + "</a>"
+			 			"<h1>" + "There is already an account registered to this email, please try another email." + "</h1>" + 
+			 			"<a href='register.jsp'>" + "Try another email this time." + "</a>"
 			 			);
 			 	writer.close();
 		 }

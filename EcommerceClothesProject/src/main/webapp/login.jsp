@@ -3,16 +3,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 	
-	<%
-    	User auth = (User) request.getSession().getAttribute("auth");
-    	if(auth!=null){
-    		response.sendRedirect("index.jsp");
-    	}
-    %>
-    
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 
 <title>E-Commerce Cart</title>
 <%@include file="/include/navbar.jsp"%>
@@ -32,9 +29,9 @@
 						<input type="password" name="login-password" class="form-control" placeholder="Password">
 					</div>
 					<div class="text-center">
-						<button type="submit" class="btn btn-primary">Login</button>
+						<button type="submit" class="btn btn-primary">Login</button><br><br>
+						<a href="register.jsp">Don't have an account? Register here!</a>
 					</div>
-					<a href="register.jsp">Don't have an account? Register here!</a>
 				</form>
 			</div>
 		</div>

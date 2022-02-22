@@ -7,12 +7,21 @@
 			aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+		
+		<%
+HttpSession sessions = request.getSession();
+%>
+<%
+String lolmao= (String) sessions.getAttribute("currentUser");
+%>
+
 	
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-        			<%if(auth != null){%>
+        			<%if(lolmao != null){%>
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Admin</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/UserServlet/dashboard">Account</a></li>
 					<li class="nav-item"><a class="nav-link" href="log-out">Log out</a></li>
 				<%}else{ %>
 					<li class="nav-item"><a class="nav-link" href="login.jsp">Login</a></li>
