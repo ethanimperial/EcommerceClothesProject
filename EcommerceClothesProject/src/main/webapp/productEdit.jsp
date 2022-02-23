@@ -56,14 +56,14 @@ value='${product.name}' />" />
 				<fieldset class="form-group">
 					<label>Product Title</label> <input type="text"
 						value="<c:out
-value='Enter Product Name' />" class="form-control"
+value='' />" class="form-control"
 						name="name" required="required">
 				</fieldset>
 				
 						<fieldset class="form-group">
 					<label>Image</label> <input type="text"
 						value="<c:out
-value='Insert Image Address' />" class="form-control"
+value='' />" class="form-control"
 						name="image">
 				</fieldset>
 				
@@ -71,7 +71,7 @@ value='Insert Image Address' />" class="form-control"
 				<fieldset class="form-group">
 					<label>Price</label> <input type="text"
 						value="<c:out
-value='Enter Product Price' />" class="form-control"
+value='' />" class="form-control"
 						name="price">
 				</fieldset>
 				
@@ -79,7 +79,7 @@ value='Enter Product Price' />" class="form-control"
 				<fieldset class="form-group">
 					<label>Category</label> <input type="text"
 						value="<c:out
-value='Enter Product Category' />" class="form-control"
+value='' />" class="form-control"
 						name="category">
 				</fieldset>
 				

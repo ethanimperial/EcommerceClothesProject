@@ -92,7 +92,7 @@ h2 {
 	<h3 class="text-center">Edit Products</h3>
 	<div class="container text-left">
 		<!-- Add new user button redirects to the register.jsp page -->
-		<a href="<%=request.getContextPath()%>/AddProduct.jsp" class="center">Add
+		<a href="<%=request.getContextPath()%>/AddProduct.jsp" name = "addProduct" class="center">Add
 			New Product</a>
 	</div>
 

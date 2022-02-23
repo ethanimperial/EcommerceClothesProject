@@ -47,33 +47,33 @@ Add New Product
 				
 				
 				<fieldset class="form-group">
-					<label>Product Title</label> <input type="text"
+					<label>Product Title</label> <input type="text" name="name"
 						value="<c:out
-value='Enter Product Name' />" class="form-control"
-						name="name" required="required">
+value='' />" class="form-control"
+						 required="required">
 				</fieldset>
 				
 						<fieldset class="form-group">
-					<label>Image</label> <input type="text"
+					<label>Image</label> <input type="text" name="image"
 						value="<c:out
-value='Insert Image Address' />" class="form-control"
-						name="image">
+value='' />" class="form-control"
+						>
 				</fieldset>
 				
 				
 				<fieldset class="form-group">
-					<label>Price</label> <input type="text"
+					<label>Price</label> <input type="text" name="price"
 						value="<c:out
-value='Enter Product Price' />" class="form-control"
-						name="price">
+value='' />" class="form-control"
+						>
 				</fieldset>
 				
 				
 				<fieldset class="form-group">
-					<label>Category</label> <input type="text"
+					<label>Category</label> <input type="text" name="category"
 						value="<c:out
-value='Enter Product Category' />" class="form-control"
-						name="category">
+value='' />" class="form-control"
+						>
 				</fieldset>
 				
 				
@@ -82,7 +82,7 @@ value='Enter Product Category' />" class="form-control"
 							
 				
 				
-				<button type="submit" class="btn btn-success">Save</button>
+				<button type="submit" name = "save" class="btn btn-success">Save</button>
 				</form>
 			</div>
 		</div>
