@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <h1>Your Order has been successful!</h1>
- <a class="mx-3 btn btn-primary" href="http://localhost:8080/EcommerceClothesProject/Home.jsp">Go back to home page</a>
+ <a class="mx-3 btn btn-primary" href="http://localhost:8090/EcommerceClothesProject/Home.jsp">Go back to home page</a>
 </head>
 <body>
 

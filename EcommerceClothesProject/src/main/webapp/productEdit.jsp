@@ -89,7 +89,7 @@ value='' />" class="form-control"
 							
 				
 				
-				<button type="submit" class="btn btn-success">Save</button>
+				<button type="submit" name="save" class="btn btn-success">Save</button>
 				</form>
 			</div>
 		</div>

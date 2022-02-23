@@ -36,7 +36,7 @@ if (cart_list != null) {
 
 <div class="container">
 		<div class="d-flex py-3"><h3>Total Price: $ ${ (total>0)?total:0 } </h3>
-		 <a class="mx-3 btn btn-primary" href="CheckOutServlet">Check Out</a></div>
+		 <a class="mx-3 btn btn-primary" name= "check" href="CheckOutServlet">Check Out</a></div>
 		<table class="table table-light">
 			<thead>
 				<tr>
@@ -61,13 +61,13 @@ if (cart_list != null) {
 							<form action="order-now" method="post" class="form-inline">
 							<input type="hidden" name="id" value="<%= c.getId() %>" class="form-input">
 								<div class="form-group d-flex justify-content-between">
-									<a class="btn bnt-sm btn-incre" href="QuantityServlet?action=inc&id=<%=c.getId()%>"><i class="fas fa-plus-square"></i></a> 
+									<a class="btn bnt-sm btn-incre" name= "incre" href="QuantityServlet?action=inc&id=<%=c.getId()%>"><i class="fas fa-plus-square"></i></a> 
 									<input type="text" name="quantity" class="form-control"  value="<%=c.getQuantity()%>" readonly> 
-									<a class="btn btn-sm btn-decre" href="QuantityServlet?action=dec&id=<%=c.getId()%>"><i class="fas fa-minus-square"></i></a>
+									<a class="btn btn-sm btn-decre" name= "decre" href="QuantityServlet?action=dec&id=<%=c.getId()%>"><i class="fas fa-minus-square"></i></a>
 								</div>
 							</form>
 						</td>
-						<td><a href="RemoveFromCartServlet?id=<%=c.getId() %>" class="btn btn-sm btn-danger">Remove</a></td>
+						<td><a href="RemoveFromCartServlet?id=<%=c.getId() %>" class="btn btn-sm btn-danger" name= "remove">Remove</a></td>
 					</tr>
 
 						
