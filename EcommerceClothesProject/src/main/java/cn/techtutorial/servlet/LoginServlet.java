@@ -48,7 +48,7 @@ public class LoginServlet extends HttpServlet {
 		try{
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/usersstuff", "root", "password");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommerceproject", "root", "password");
 
 			// Step 4: implement the sql query using prepared statement
 			// (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
@@ -71,7 +71,7 @@ public class LoginServlet extends HttpServlet {
 				// successfully registered” via the response,
 				id = i.getString("id");
 				request.getSession().setAttribute("currentUser", id);
-				response.sendRedirect("index.jsp");		 
+				response.sendRedirect("Home.jsp");		 
 			} else {
 				out.println("Your username or password is incorrect, please try again." + "<br>"
 						+ "<a href='login.jsp'>" + "Try again." + "</a>");
