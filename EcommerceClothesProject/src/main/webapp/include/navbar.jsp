@@ -22,7 +22,7 @@ String lolmao= (String) sessions.getAttribute("currentUser");
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard">Admin</a></li>
 					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/UserServlet/dashboard">Account</a></li>
-					<li class="nav-item"><a class="nav-link" href="log-out">Log out</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://localhost:8080/EcommerceClothesProject/log-out">Log out</a></li>
 				<%}else{ %>
 					<li class="nav-item"><a class="nav-link" href="login.jsp">Login</a></li>
 				<%}%>	
