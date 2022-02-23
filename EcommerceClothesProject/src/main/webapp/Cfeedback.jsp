@@ -7,9 +7,9 @@
 <title>Enter your Feedback here!</title>
 </head>
 <body>
-	<form action="FeedbackServlet" method="post">
+	<form action="CFeedbackServlet" method="post">
 		 Feedback: <input type='text' name='Feedback'>
-		 <input type="submit" value='Call Servlet'>
+		 <input type="submit" value='Call Servlet' name="save" >
 	</form>
 </body>
 </html>

@@ -39,5 +39,14 @@
 		<url-pattern>/UserServlet/update</url-pattern>
 		<url-pattern>/UserServlet/delete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>R2FeedbackServlet</servlet-name>
+		<url-pattern>/R2FeedbackServlet/dashboard</url-pattern>
+		<url-pattern>/R2FeedbackServlet/edit</url-pattern>
+		<url-pattern>/R2FeedbackServlet/update</url-pattern>
+		<url-pattern>/R2FeedbackServlet/delete</url-pattern>
+	</servlet-mapping>
+	
  
 </web-app>

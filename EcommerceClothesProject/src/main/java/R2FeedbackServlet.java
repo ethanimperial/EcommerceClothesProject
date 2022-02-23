@@ -185,7 +185,7 @@ public class R2FeedbackServlet extends HttpServlet {
 		}
 		// Step 3: redirect back to RFeedbackServlet (note: remember to change the url
 		// to your project name)
-		response.sendRedirect("http://localhost:8080/EcommerceClothesProject/R2FeedbackServlet/dashboard");
+		response.sendRedirect("/EcommerceClothesProject/R2FeedbackServlet/dashboard");
 	}
 
 	// method to delete feedback
@@ -203,7 +203,7 @@ public class R2FeedbackServlet extends HttpServlet {
 		 int i = statement.executeUpdate();
 	 }
 	 //Step 3: redirect back to UserServlet dashboard (note: remember to change the url to your project name)
-	 response.sendRedirect("http://localhost:8080/EcommerceClothesProject/R2FeedbackServlet/dashboard");
+	 response.sendRedirect("/EcommerceClothesProject/R2FeedbackServlet/dashboard");
 	}
 
 }

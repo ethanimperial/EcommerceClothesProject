@@ -19,19 +19,19 @@
 			<div class="container text-left">
 				<!-- Add new feedback button redirects to the Cfeedback.jsp page -->
 				<a href="<%=request.getContextPath()%>/Cfeedback.jsp"
-					class="btn btn-success">Add New Feedback</a>
+					class="btn btn-success" name="Feedback">Add New Feedback</a>
 			</div>
 			<br>
 			<!-- Create a table to list out all feedbacks information -->
 			<table class="table">
-				<thead>  
+				<thead>
 					<tr>
 						<th>Feedback</th>
 
 						<th>Actions</th>
 					</tr>
 				</thead>
-		
+
 				<!-- Pass in the list of users receive via the Servlet’s response to a loop
 	-->
 				<tbody>
@@ -44,13 +44,11 @@
 							<!-- For each feedback in the database, Edit/Delete
 	buttons which invokes the edit/delete functions -->
 
-							<td><a
-								href="edit?name=<c:out value='${feedback.id}'
+							<td><a href="edit?name=<c:out value='${feedback.id}'
 	/>">Edit</a>
 								&nbsp;&nbsp;&nbsp;&nbsp; <a
 								href="delete?id=<c:out
-	value='${feedback.id}' />">Delete</a>
-							</td>
+	value='${feedback.id}' />">Delete</a></td>
 
 						</tr>
 					</c:forEach>

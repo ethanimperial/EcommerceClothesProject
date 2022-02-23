@@ -182,7 +182,7 @@ public class RFeedbackServlet extends HttpServlet {
 		}
 		// Step 3: redirect back to RFeedbackServlet (note: remember to change the url
 		// to your project name)
-		response.sendRedirect("http://localhost:8080/EcommerceClothesProject/RFeedbackServlet/dashboard"); 
+		response.sendRedirect("/EcommerceClothesProject/RFeedbackServlet/dashboard"); 
 	}
 
 }

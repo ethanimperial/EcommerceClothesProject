@@ -55,11 +55,11 @@
 				<fieldset class="form-group">
 					<label>Feedback</label> <input type="text"
 						value="<c:out
-	value='${feedback.feedback}' />"
+	value='' />"
 						class="form-control" name="feedback" required="required">
 				</fieldset>
 
-				<button type="submit" class="btn btn-success">Save</button>
+				<button type="submit" class="btn btn-success" name='save'>Save</button>
 				</form>
 			</div>
 		</div>
