@@ -150,7 +150,7 @@ public class ProductDetailsServlet extends HttpServlet {
 					int i = statement.executeUpdate();
 				}
 
-				response.sendRedirect("http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard");
+				response.sendRedirect("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/dashboard");
 			}
 			
 			// method to delete user
@@ -168,7 +168,7 @@ public class ProductDetailsServlet extends HttpServlet {
 				// url to your project name)
 			
 				
-				response.sendRedirect("http://localhost:8080/EcommerceClothesProject/ProductDetailsServlet/dashboard");
+				response.sendRedirect("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/dashboard");
 			}
 
 			
