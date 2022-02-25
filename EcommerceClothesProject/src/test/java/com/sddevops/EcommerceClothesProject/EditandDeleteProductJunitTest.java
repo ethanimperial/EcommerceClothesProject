@@ -45,10 +45,10 @@ class EditandDeleteProductJunitTest {
 	    public void testUpdateServlet() throws ServletException, IOException {
 
 
-	        request.addParameter("name", "testname");
-	        request.addParameter("image","testimage");
-	        request.addParameter("price", "49.99");
-	        request.addParameter("category", "testcategory");
+	        request.addParameter("name", "testupdatename");
+	        request.addParameter("image","testupdateimage");
+	        request.addParameter("price", "29.99");
+	        request.addParameter("category", "testupdatecategory");
 	       
 	        servlet.doPost(request, response);
 	       
@@ -64,6 +64,3 @@ class EditandDeleteProductJunitTest {
 	  
 
 }
-
-
-

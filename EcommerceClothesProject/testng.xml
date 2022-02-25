@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.sddevops.selenium_EcommerceClothesProject.AddProductTest"/>
+      <class name="com.sddevops.EcommerceClothesProject.AddProductTest"/>
+      <class name="com.sddevops.EcommerceClothesProject.CreateOrderTest"/>
+      <class name="com.sddevops.EcommerceClothesProject.DeleteProductTest"/>
+      <class name="com.sddevops.EcommerceClothesProject.UpdateProductTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
