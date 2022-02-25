@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-24T20:33:52 SGT" name="Default suite" finished-at="2022-02-24T20:33:56 SGT" duration-ms="3480">
+  <suite started-at="2022-02-25T12:10:47 SGT" name="Default suite" finished-at="2022-02-25T12:10:50 SGT" duration-ms="3166">
     <groups>
     </groups>
-    <test started-at="2022-02-24T20:33:52 SGT" name="Default test" finished-at="2022-02-24T20:33:56 SGT" duration-ms="3480">
-      <class name="com.sddevops.selenium_EcommerceClothesProject.CreateOrderTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.sddevops.selenium_EcommerceClothesProject.CreateOrderTest@1bb266b3]" started-at="2022-02-24T20:33:52 SGT" name="beforeTest" finished-at="2022-02-24T20:33:54 SGT" duration-ms="1057" status="PASS">
+    <test started-at="2022-02-25T12:10:47 SGT" name="Default test" finished-at="2022-02-25T12:10:50 SGT" duration-ms="3166">
+      <class name="com.sddevops.EcommerceClothesProject.AddProductTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.sddevops.EcommerceClothesProject.AddProductTest@5fa07e12]" started-at="2022-02-25T12:10:47 SGT" name="beforeTest" finished-at="2022-02-25T12:10:48 SGT" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkInput()[pri:0, instance:com.sddevops.selenium_EcommerceClothesProject.CreateOrderTest@1bb266b3]" started-at="2022-02-24T20:33:54 SGT" name="checkInput" finished-at="2022-02-24T20:33:56 SGT" duration-ms="2322" status="PASS">
+        <test-method signature="checkInput()[pri:0, instance:com.sddevops.EcommerceClothesProject.AddProductTest@5fa07e12]" started-at="2022-02-25T12:10:48 SGT" name="checkInput" finished-at="2022-02-25T12:10:50 SGT" duration-ms="1916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInput -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.sddevops.selenium_EcommerceClothesProject.CreateOrderTest@1bb266b3]" started-at="2022-02-24T20:33:56 SGT" name="afterTest" finished-at="2022-02-24T20:33:56 SGT" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.sddevops.EcommerceClothesProject.AddProductTest@5fa07e12]" started-at="2022-02-25T12:10:50 SGT" name="afterTest" finished-at="2022-02-25T12:10:50 SGT" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.sddevops.selenium_EcommerceClothesProject.CreateOrderTest -->
+      </class> <!-- com.sddevops.EcommerceClothesProject.AddProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
