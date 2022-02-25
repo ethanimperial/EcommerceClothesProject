@@ -173,7 +173,7 @@ public class ProductDetailsServletJunit extends HttpServlet {
 
 	// Step 5: listUsers function to connect to the database and retrieve all users
 	// records
-	private void listProducts(HttpServletRequest request, HttpServletResponse response)
+	public static void listProducts(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException {
 		List<ProductJunit> products = new ArrayList<>();
 		try (Connection connection = getConnection();

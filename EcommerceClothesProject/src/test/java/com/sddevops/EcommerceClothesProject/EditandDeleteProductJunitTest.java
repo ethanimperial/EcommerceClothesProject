@@ -31,6 +31,15 @@ class EditandDeleteProductJunitTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
+	
+	  @Test
+	    public void testGetServlet() throws ServletException, IOException, SQLException {
+	       
+	       ProductDetailsServletJunit.listProducts(request,response);
+	   
+
+	    }
+
 
 	  @Test
 	    public void testUpdateServlet() throws ServletException, IOException {
@@ -52,6 +61,7 @@ class EditandDeleteProductJunitTest {
 	       ProductDetailsServletJunit.deleteProduct(request,response);
 
 	    }
+	  
 
 }
 
