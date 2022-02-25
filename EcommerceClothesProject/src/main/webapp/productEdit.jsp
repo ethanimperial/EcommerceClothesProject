@@ -13,7 +13,7 @@ crossorigin="anonymous">
 
 
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>New Title Here</title>
 </head>
 <body>
 
