@@ -78,7 +78,7 @@ public class UserTest {
 		webDriver.findElement(By.xpath("/html/body/div/div/div[2]/form/div[3]/button")).click();
 
 		// Check that we have reached the next page after logging in
-		Assert.assertEquals(webDriver.getTitle(), "Home");
+		Assert.assertEquals(webDriver.getTitle(), "Insert title here");
 
 		// Assert.assertEquals(we.getAttribute("role"), "contentinfo");
 	}
@@ -133,7 +133,7 @@ public class UserTest {
 	@AfterTest
 	public void afterTest() {
 		// Quit the ChromeDriver and close all associated window at the end of test
-		// webDriver.quit();
+		webDriver.quit();
 	}
 
 }
