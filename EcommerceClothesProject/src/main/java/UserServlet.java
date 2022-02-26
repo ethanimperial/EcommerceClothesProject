@@ -188,7 +188,7 @@ public class UserServlet extends HttpServlet {
 		}
 		// Step 3: redirect back to UserServlet (note: remember to change the url to
 		// your project name)
-		response.sendRedirect("http://localhost:8080/EcommerceClothesProject/UserServlet/dashboard");
+		response.sendRedirect("http://localhost:8090/EcommerceClothesProject/UserServlet/dashboard");
 	}
 
 	// method to delete user
@@ -208,6 +208,6 @@ public class UserServlet extends HttpServlet {
 		// Step 3: redirect back to UserServlet dashboard (note: remember to change the
 		// url to your project name)
 		
-		response.sendRedirect("http://localhost:8080/EcommerceClothesProject/login.jsp");
+		response.sendRedirect("http://localhost:8090/EcommerceClothesProject/login.jsp");
 	}
 }

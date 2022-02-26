@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-24T23:03:46 SGT" name="Default suite" finished-at="2022-02-24T23:03:51 SGT" duration-ms="5206">
+    <groups>
+    </groups>
+    <test started-at="2022-02-24T23:03:46 SGT" name="Default test" finished-at="2022-02-24T23:03:51 SGT" duration-ms="5206">
+      <class name="com.sddevops.EcommerceClothesProject.NewTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.sddevops.EcommerceClothesProject.NewTest@87a85e1]" started-at="2022-02-24T23:03:46 SGT" name="beforeTest" finished-at="2022-02-24T23:03:47 SGT" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="checkRegister()[pri:0, instance:com.sddevops.EcommerceClothesProject.NewTest@87a85e1]" started-at="2022-02-24T23:03:47 SGT" name="checkRegister" finished-at="2022-02-24T23:03:49 SGT" duration-ms="1822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRegister -->
+        <test-method signature="checkLogin()[pri:1, instance:com.sddevops.EcommerceClothesProject.NewTest@87a85e1]" started-at="2022-02-24T23:03:49 SGT" name="checkLogin" finished-at="2022-02-24T23:03:50 SGT" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin -->
+        <test-method signature="checkUpdate()[pri:2, instance:com.sddevops.EcommerceClothesProject.NewTest@87a85e1]" started-at="2022-02-24T23:03:50 SGT" name="checkUpdate" finished-at="2022-02-24T23:03:51 SGT" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdate -->
+        <test-method signature="checkDelete()[pri:3, instance:com.sddevops.EcommerceClothesProject.NewTest@87a85e1]" started-at="2022-02-24T23:03:51 SGT" name="checkDelete" finished-at="2022-02-24T23:03:51 SGT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDelete -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.sddevops.EcommerceClothesProject.NewTest@87a85e1]" started-at="2022-02-24T23:03:51 SGT" name="afterTest" finished-at="2022-02-24T23:03:51 SGT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.sddevops.EcommerceClothesProject.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

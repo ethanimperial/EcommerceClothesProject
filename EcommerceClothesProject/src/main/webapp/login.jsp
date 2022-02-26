@@ -11,7 +11,7 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 
-<title>E-Commerce Cart</title>
+<title>Login</title>
 <%@include file="/include/navbar.jsp"%>
 </head>
 <body>
@@ -22,11 +22,11 @@
 				<form action="user-login" method="post">
 					<div class="form-group">
 						<label>Email address</label> 
-						<input type="email" name="login-email" class="form-control" placeholder="Enter email">
+						<input type="email" id="email" name="login-email" class="form-control" placeholder="Enter email">
 					</div>
 					<div class="form-group">
 						<label>Password</label> 
-						<input type="password" name="login-password" class="form-control" placeholder="Password">
+						<input type="password" id="password" name="login-password" class="form-control" placeholder="Password">
 					</div>
 					<div class="text-center">
 						<button type="submit" class="btn btn-primary">Login</button><br><br>
