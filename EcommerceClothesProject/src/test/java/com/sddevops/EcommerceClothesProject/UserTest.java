@@ -86,7 +86,10 @@ public class UserTest {
 	@Test (priority = 2)
 	public void checkUpdate() {
 		// Find button for profile and click
-		webDriver.findElement(By.xpath("/html/body/nav/div/div/ul/li[3]/a")).click();
+		//webDriver.findElement(By.xpath("/html/body/nav/div/div/ul/li[3]/a")).click();
+		
+		//Move to profile page
+		webDriver.navigate().to("http://localhost:8090/EcommerceClothesProject/UserServlet/dashboard");
 
 		// Assert the title to check that we are indeed in the correct website
 		Assert.assertEquals(webDriver.getTitle(), "My account");
