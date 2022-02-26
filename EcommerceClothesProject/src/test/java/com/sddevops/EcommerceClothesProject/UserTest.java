@@ -72,7 +72,7 @@ public class UserTest {
 
 		// Input given email and password for login
 		we.sendKeys(email);
-		me.sendKeys(password);
+		me.sendKeys(password); 
 
 		// Find login button and click
 		webDriver.findElement(By.xpath("/html/body/div/div/div[2]/form/div[3]/button")).click();
