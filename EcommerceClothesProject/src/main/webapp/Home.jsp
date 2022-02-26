@@ -33,7 +33,7 @@ List<Product> products = pd.getAllProducts();
 <%@include file="/include/head.jsp"%>
 
 <meta charset="ISO-8859-1">
-<title>Home</title>
+<title>Insert title here</title>
 </head>
 <body>
 <%@include file="/include/navbar.jsp"%>
