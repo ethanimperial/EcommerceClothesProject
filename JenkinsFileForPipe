@@ -1,0 +1,25 @@
+pipeline {
+     stages {
+        stage('build') {
+        
+            steps {           
+                 git url:'https://github.com/ethanimperial/EcommerceClothesProject.git'
+             }
+             
+            steps {
+                withMaven(maven : 'maven 3.8.2') {
+                    bat 'mvn clean install'
+            }
+            
+        }
+    }
+    
+    post {
+        success{
+            deploy adapters: [tomcat9(url: 'http://localhost:8090',
+                              credentialsId: '3952562b-f739-4983-99b5-de0fa89d1586')],
+                        war: '**/*.war'
+                contextPath: 'EcommerceClothesProject'
+        }
+    }
+}
