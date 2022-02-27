@@ -6,6 +6,10 @@ pipeline {
          }
      }
      
+     tools{
+         maven 'maven 3.8.2'
+     }
+     
      stages {
         stage('Cloning github repository') {
         
@@ -18,9 +22,7 @@ pipeline {
         stage('Invoke top-level maven targets'){
           
             steps {
-                withMaven(maven : 'maven 3.8.2') {
                     bat 'mvn clean install'
-                }
             }
             
         }
