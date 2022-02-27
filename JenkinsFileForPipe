@@ -7,17 +7,22 @@ pipeline {
      }
      
      stages {
-        stage('build') {
+        stage('Cloning github repository') {
         
             steps {           
                  git branch: 'dylan_branch', url:'https://github.com/ethanimperial/EcommerceClothesProject.git'
              }
-             
+       
+        }
+        
+        stage('Invoke top-level maven targets'){
+          
             steps {
                 withMaven(maven : 'maven 3.8.2') {
                     bat 'mvn clean install'
                 }
             }
+            
         }
     }
     
