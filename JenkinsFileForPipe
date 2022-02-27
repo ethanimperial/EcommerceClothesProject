@@ -3,6 +3,8 @@ pipeline {
         node{
           label ''
           customWorkspace "C:\\Users\\taede\\OneDrive\\Documents\\DevOps\\workspace"
+         }
+     }
      
      stages {
         stage('build') {
