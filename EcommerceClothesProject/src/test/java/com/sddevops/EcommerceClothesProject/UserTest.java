@@ -119,6 +119,9 @@ public class UserTest {
 	public void checkDelete() {
 		// Find button for profile and click
 		webDriver.findElement(By.xpath("/html/body/div/div/table/tbody/tr/td[4]/a[2]")).click();
+		
+		// Check whether page was redirected after deleting account
+		Assert.assertEquals(webDriver.getTitle(), "Login");
 	}
 
 	@BeforeTest
