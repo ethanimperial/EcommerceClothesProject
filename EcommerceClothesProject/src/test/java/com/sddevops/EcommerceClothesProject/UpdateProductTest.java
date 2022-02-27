@@ -15,19 +15,19 @@ public class UpdateProductTest {
   @Test
   public void checkInput() {
 	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
-      WebDriver driver=new ChromeDriver();
-      driver.get("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/edit?name=testname");
+    
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/edit?name=testname");
       
       
       
       
-      WebElement name = driver.findElement(By.name("name"));
+      WebElement name = webDriver.findElement(By.name("name"));
       
-      WebElement image = driver.findElement(By.name("image"));
+      WebElement image = webDriver.findElement(By.name("image"));
       
-      WebElement price = driver.findElement(By.name("price"));
+      WebElement price = webDriver.findElement(By.name("price"));
       
-      WebElement category = driver.findElement(By.name("category"));
+      WebElement category = webDriver.findElement(By.name("category"));
       
      
       
@@ -36,7 +36,7 @@ public class UpdateProductTest {
       price.sendKeys("22.99");
       category.sendKeys("updatecategory");
       
-      WebElement save = driver.findElement(By.name("save"));
+      WebElement save = webDriver.findElement(By.name("save"));
       
       save.click();
       

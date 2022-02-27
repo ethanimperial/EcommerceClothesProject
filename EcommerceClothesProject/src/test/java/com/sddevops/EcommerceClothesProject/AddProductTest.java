@@ -15,23 +15,23 @@ public class AddProductTest {
   @Test
   public void checkInput() {
 	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
-      WebDriver driver=new ChromeDriver();
-      driver.get("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/dashboard");
+   
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/dashboard");
       
       
       
       
-      WebElement addProduct = driver.findElement(By.name("addProduct"));
+      WebElement addProduct = webDriver.findElement(By.name("addProduct"));
       
       addProduct.click();
       
-      WebElement name = driver.findElement(By.name("name"));
+      WebElement name = webDriver.findElement(By.name("name"));
       
-      WebElement image = driver.findElement(By.name("image"));
+      WebElement image = webDriver.findElement(By.name("image"));
       
-      WebElement price = driver.findElement(By.name("price"));
+      WebElement price = webDriver.findElement(By.name("price"));
       
-      WebElement category = driver.findElement(By.name("category"));
+      WebElement category = webDriver.findElement(By.name("category"));
       
      
       
@@ -40,7 +40,7 @@ public class AddProductTest {
       price.sendKeys("45.99");
       category.sendKeys("testcategory");
       
-      WebElement save = driver.findElement(By.name("save"));
+      WebElement save = webDriver.findElement(By.name("save"));
       
       save.click();
       

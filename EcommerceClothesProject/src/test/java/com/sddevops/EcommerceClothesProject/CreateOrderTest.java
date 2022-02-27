@@ -15,28 +15,28 @@ public class CreateOrderTest {
   @Test
   public void checkInput() {
 	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
-      WebDriver driver=new ChromeDriver();
+   
       
-      driver.get("http://localhost:8090/EcommerceClothesProject/AddToCartServlet?id=60");
-      driver.get("http://localhost:8090/EcommerceClothesProject/AddToCartServlet?id=61");
-      driver.get("http://localhost:8090/EcommerceClothesProject/AddToCartServlet?id=62");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/AddToCartServlet?id=60");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/AddToCartServlet?id=61");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/AddToCartServlet?id=62");
       
-      driver.get("http://localhost:8090/EcommerceClothesProject/cart.jsp");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/cart.jsp");
       
       
   
-      driver.get("http://localhost:8090/EcommerceClothesProject/QuantityServlet?action=inc&id=60");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/QuantityServlet?action=inc&id=60");
       
-      driver.get("http://localhost:8090/EcommerceClothesProject/QuantityServlet?action=inc&id=60");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/QuantityServlet?action=inc&id=60");
       
-      driver.get("http://localhost:8090/EcommerceClothesProject/QuantityServlet?action=dec&id=60");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/QuantityServlet?action=dec&id=60");
       
       
 
-      driver.get("http://localhost:8090/EcommerceClothesProject/RemoveFromCartServlet?id=61");
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/RemoveFromCartServlet?id=61");
     
      
-      WebElement check = driver.findElement(By.name("check"));
+      WebElement check = webDriver.findElement(By.name("check"));
       
       check.click();
       

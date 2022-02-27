@@ -15,8 +15,8 @@ public class DeleteProductTest {
   @Test
   public void checkInput() {
 	  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
-      WebDriver driver=new ChromeDriver();
-      driver.get("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/delete?name=updatename");
+   
+      webDriver.get("http://localhost:8090/EcommerceClothesProject/ProductDetailsServlet/delete?name=updatename");
       
       
       

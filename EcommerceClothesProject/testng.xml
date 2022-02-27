@@ -8,6 +8,9 @@
       <class name="com.sddevops.EcommerceClothesProject.DeleteProductTest"/>
       <class name="com.sddevops.EcommerceClothesProject.UpdateProductTest"/>
       
+      <class name="com.sddevops.EcommerceClothesProject.AddProductJunitTest"/>
+      <class name="com.sddevops.EcommerceClothesProject.EditandDeleteProductJunitTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
