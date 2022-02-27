@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Enter your Feedback!</title>
+<title>Enter your Feedback here!</title>
 </head>
 <body>
 	<form action="CFeedbackServlet" method="post">
