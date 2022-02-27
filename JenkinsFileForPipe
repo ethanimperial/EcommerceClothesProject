@@ -1,0 +1,40 @@
+pipeline {
+     agent{
+        node{
+          label ''
+          customWorkspace "C:\\Users\\taede\\OneDrive\\Documents\\DevOps\\workspace"
+         }
+     }
+     
+     tools{
+         maven 'maven 3.8.2'
+         jdk 'JDK 1.8'
+     }
+     
+     stages {
+        stage('Cloning github repository') {
+        
+            steps {           
+                 git branch: 'dylan_branch', url:'https://github.com/ethanimperial/EcommerceClothesProject.git'
+             }
+       
+        }
+        
+        stage('Invoke top-level maven targets'){
+          
+            steps {
+                    bat 'mvn clean install'
+            }
+            
+        }
+    }
+    
+    post {
+        success{
+            deploy adapters: [tomcat9(url: 'http://localhost:8090',
+                              credentialsId: '3952562b-f739-4983-99b5-de0fa89d1586')],
+                        war: '**/*.war',
+                contextPath: 'EcommerceClothesProject'
+        }
+    }
+}
