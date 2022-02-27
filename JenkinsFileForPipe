@@ -9,8 +9,8 @@ pipeline {
             steps {
                 withMaven(maven : 'maven 3.8.2') {
                     bat 'mvn clean install'
+                }
             }
-            
         }
     }
     
